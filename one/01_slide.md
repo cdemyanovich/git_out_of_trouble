@@ -91,3 +91,65 @@
     $ git pull --rebase
     $ git push
 
+!SLIDE commandline incremental
+# Problem
+## You wrote a bad commit message for the last commit
+
+    $ git commit -m "Whatever"
+    [master 1eaaace] Whatever
+     1 file changed, 11 insertions(+)
+
+!SLIDE commandline incremental
+# Solution
+## Amend the last commit
+
+    $ git commit --amend
+
+!SLIDE code smaller
+
+    Whatever
+
+    # Please enter the commit message for your changes. Lines starting
+    # with '#' will be ignored, and an empty message aborts the commit.
+    # On branch master
+    # Your branch is ahead of 'origin/master' by 4 commits.
+    #
+    # Changes to be committed:
+    #   (use "git reset HEAD^1 <file>..." to unstage)
+    #
+    #	modified:   one/01_slide.md
+    #
+
+!SLIDE code smaller
+
+    Describe amending commit to fix bad message
+
+    # Please enter the commit message for your changes. Lines starting
+    # with '#' will be ignored, and an empty message aborts the commit.
+    # On branch master
+    # Your branch is ahead of 'origin/master' by 4 commits.
+    #
+    # Changes to be committed:
+    #   (use "git reset HEAD^1 <file>..." to unstage)
+    #
+    #	modified:   one/01_slide.md
+    #
+
+!SLIDE commandline
+## Your bad log message is fixed
+
+    $ git commit --amend
+    [master a4f0c81] Describe amending commit to fix bad message
+     1 file changed, 11 insertions(+)
+
+!SLIDE commandline
+## WARNING: the SHA changed
+
+    $ git commit -m "Whatever"
+    [master 1eaaace] Whatever
+     1 file changed, 11 insertions(+)
+
+    $ git commit --amend
+    [master a4f0c81] Describe amending commit to fix bad message
+     1 file changed, 11 insertions(+)
+
