@@ -153,3 +153,18 @@
     [master a4f0c81] Describe amending commit to fix bad message
      1 file changed, 11 insertions(+)
 
+!SLIDE commandline incremental
+# Problem
+## You wrote a bad commit message a few commits ago
+
+    $ git commit -m "Whatever"
+    [master 1eaaace] Whatever
+     1 file changed, 11 insertions(+)
+
+
+!SLIDE commandline incremental
+# Solution
+## Interactively rebase, stopping to correct bad message
+
+    $ git rebase -i <sha>
+
