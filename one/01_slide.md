@@ -6,6 +6,28 @@
     $ man git-<command>
 
 !SLIDE commandline incremental
+# Experiment
+
+    $ git add --dry-run .
+    add '.gitignore'
+    add '.rvmrc'
+    add 'Gemfile'
+    ...
+
+    $ git status
+      # On branch master
+      #
+      # Untracked files:
+      #   (use "git add <file>..." to include in what will be committed)
+      #
+      #	.gitignore
+      #	.rvmrc
+      #	Gemfile
+      ...
+
+.notes -n is the short-hand designator, but it sometimes has a different meaning for other commands
+
+!SLIDE commandline incremental
 # Problem
 ## You staged a file by mistake
 
