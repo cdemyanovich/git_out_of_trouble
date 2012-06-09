@@ -1,3 +1,10 @@
+!SLIDE commandline
+# Finding Help
+
+    $ git help <command>
+
+    $ man git-<command>
+
 !SLIDE commandline incremental
 # Problem
 ## You staged a file by mistake
