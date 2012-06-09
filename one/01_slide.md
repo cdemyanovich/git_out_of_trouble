@@ -308,3 +308,15 @@ The options --contains, --merged and --no-merged serve three related but differe
     $ git status
       # On branch master
       nothing to commit (working directory clean)
+
+!SLIDE
+# Problem
+## .DS_Store is everywhere! Deleting all of them will take forever!
+
+!SLIDE commandline
+# Solution
+## Remove them with the clean command
+
+    $ git clean
+
+    $ git clean -d
