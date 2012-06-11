@@ -357,3 +357,13 @@ The options --contains, --merged and --no-merged serve three related but differe
     $ git clean
 
     $ git clean -d
+
+!SLIDE
+# Big Trouble in Little China
+
+need an image here from this awesome movie!
+
+!SLIDE
+# Problem
+## You lost a commit
+### (or so you think)
