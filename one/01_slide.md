@@ -96,8 +96,6 @@ need an image here
     rm 'references/02_slide.md'
     $ git status
      # On branch master
-     # Your branch is ahead of 'origin/master' by 2 commits.
-     #
      # Changes to be committed:
      #   (use "git reset HEAD <file>..." to unstage)
      #
@@ -113,8 +111,6 @@ need an image here
     D	references/02_slide.md
     $ git status
      # On branch master
-     # Your branch is ahead of 'origin/master' by 2 commits.
-     #
      # Changes not staged for commit:
      #   (use "git add/rm <file>..." to update what will be committed)
      #   (use "git checkout -- <file>..." to discard changes in working directory)
