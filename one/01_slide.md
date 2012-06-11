@@ -67,6 +67,7 @@ need an image here
 ## You added a file by mistake
 
     $ git add showoff.json
+
     $ git status
       # On branch master
       # Changes to be committed:
@@ -76,9 +77,10 @@ need an image here
 
 !SLIDE commandline incremental
 # Solution
-## Read the Fine Comments (RTFC)
+## __R__ead __t__he __F__ine __C__omments (RTFC)
 
     $ git reset HEAD showoff.json
+
     $ git status
       # On branch master
       # Untracked files:
@@ -92,6 +94,7 @@ need an image here
 
     $ git rm references/02_slide.md
     rm 'references/02_slide.md'
+
     $ git status
      # On branch master
      # Changes to be committed:
@@ -102,11 +105,12 @@ need an image here
 
 !SLIDE commandline incremental
 # Solution
-## Read the Fine Comments (RTFC)
+## RTFC
 
     $ git reset HEAD references/02_slide.md
     Unstaged changes after reset:
     D	references/02_slide.md
+
     $ git status
      # On branch master
      # Changes not staged for commit:
@@ -121,6 +125,7 @@ need an image here
 ## Again, RTFC
 
     $ git checkout -- references/02_slide.md
+
     $ git status
      # On branch master
      nothing to commit (working directory clean)
