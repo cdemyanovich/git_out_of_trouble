@@ -67,7 +67,7 @@
 
 !SLIDE commandline incremental
 # Solution
-## Follow the given advice
+## Read the Fine Comments (RTFC)
 
     $ git reset HEAD showoff.json
     $ git status
@@ -95,7 +95,7 @@
 
 !SLIDE commandline incremental
 # Solution
-## Follow the given advice
+## Read the Fine Comments (RTFC)
 
     $ git reset HEAD references/02_slide.md
     Unstaged changes after reset:
@@ -114,7 +114,7 @@
 
 !SLIDE commandline incremental
 # Solution (continued)
-## Again, follow the given advice
+## Again, RTFC
 
     $ git checkout -- references/02_slide.md
     $ git status
