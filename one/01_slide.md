@@ -120,15 +120,84 @@ need an image here
      no changes added to commit (use "git add" and/or "git commit -a")
 
 !SLIDE commandline incremental
-# Solution (continued)
 ## Again, RTFC
 
     $ git checkout -- references/02_slide.md
     $ git status
      # On branch master
-     # Your branch is ahead of 'origin/master' by 2 commits.
-     #
      nothing to commit (working directory clean)
+
+!SLIDE commandline incremental smaller
+# Problem
+## You want to ignore a file
+
+    $ git status
+      # On branch master
+      # Untracked files:
+      #   (use "git add <file>..." to include in what will be committed)
+      #
+      #	.DS_Store
+      nothing added to commit but untracked files present (use "git add" to track)
+
+!SLIDE commandline incremental smaller
+# Solution
+
+    $ echo .DS_Store >> .gitignore
+
+    $ cat .gitignore
+    .DS_Store
+
+    $ git status
+      # On branch master
+      # Untracked files:
+      #   (use "git add <file>..." to include in what will be committed)
+      #
+      #	.gitignore
+      nothing added to commit but untracked files present (use "git add" to track)
+
+!SLIDE commandline incremental smaller
+# Problem
+## You always want to ignore a file
+
+    $ git status
+      # On branch master
+      # Untracked files:
+      #   (use "git add <file>..." to include in what will be committed)
+      #
+      #	.DS_Store
+      nothing added to commit but untracked files present (use "git add" to track)
+
+!SLIDE commandline incremental smaller
+# Solution
+## Add the file to a global ignore file
+
+    $ git config --global core.excludesfile ~/.gitignore
+
+    $ cat ~/.gitconfig
+    ...
+    [core]
+            excludesfile = ~/.gitignore
+
+    $ echo .DS_Store >> ~/.gitignore
+
+    $ cat ~/.gitignore
+    .DS_Store
+
+    $ git status
+      # On branch master
+      nothing to commit (working directory clean)
+
+!SLIDE
+# Problem
+## .DS_Store is everywhere! Deleting all of them will take forever!
+
+!SLIDE commandline
+# Solution
+## Remove them with the clean command
+
+    $ git clean
+
+    $ git clean -d
 
 !SLIDE commandline incremental
 # Problem
@@ -275,84 +344,6 @@ The options --contains, --merged and --no-merged serve three related but differe
     * --contains <commit> is used to find all branches which will need special attention if <commit> were to be rebased or amended, since those branches contain the specified <commit>.
     * --merged is used to find all branches which can be safely deleted, since those branches are fully contained by HEAD.
     * --no-merged is used to find branches which are candidates for merging into HEAD, since those branches are not fully contained by HEAD.
-
-!SLIDE commandline incremental smaller
-# Problem
-## You want to ignore a file
-
-    $ git status
-      # On branch master
-      # Your branch is ahead of 'origin/master' by 6 commits.
-      #
-      # Untracked files:
-      #   (use "git add <file>..." to include in what will be committed)
-      #
-      #	.DS_Store
-      nothing added to commit but untracked files present (use "git add" to track)
-
-!SLIDE commandline incremental smaller
-# Solution
-
-    $ echo .DS_Store >> .gitignore
-
-    $ cat .gitignore
-    .DS_Store
-
-    $ git status
-      # On branch master
-      # Your branch is ahead of 'origin/master' by 6 commits.
-      #
-      # Untracked files:
-      #   (use "git add <file>..." to include in what will be committed)
-      #
-      #	.gitignore
-      nothing added to commit but untracked files present (use "git add" to track)
-
-!SLIDE commandline incremental smaller
-# Problem
-## You always want to ignore a file
-
-    $ git status
-      # On branch master
-      # Your branch is ahead of 'origin/master' by 6 commits.
-      #
-      # Untracked files:
-      #   (use "git add <file>..." to include in what will be committed)
-      #
-      #	.DS_Store
-      nothing added to commit but untracked files present (use "git add" to track)
-
-!SLIDE commandline incremental smaller
-# Solution
-## Add the file to a global ignore file
-
-    $ git config --global core.excludesfile ~/.gitignore
-
-    $ cat ~/.gitconfig
-    ...
-    [core]
-            excludesfile = ~/.gitignore
-
-    $ echo .DS_Store >> ~/.gitignore
-
-    $ cat ~/.gitignore
-    .DS_Store
-
-    $ git status
-      # On branch master
-      nothing to commit (working directory clean)
-
-!SLIDE
-# Problem
-## .DS_Store is everywhere! Deleting all of them will take forever!
-
-!SLIDE commandline
-# Solution
-## Remove them with the clean command
-
-    $ git clean
-
-    $ git clean -d
 
 !SLIDE
 # Big Trouble in Little China
