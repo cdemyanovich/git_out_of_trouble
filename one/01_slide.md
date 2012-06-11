@@ -2,6 +2,15 @@
 # Git Out of Trouble
 
 !SLIDE
+## Who?
+
+image from The Karate Kid II
+"Hey man, I'm not looking for any trouble."
+"Maybe trouble looking for you."
+
+In short, everyone
+
+!SLIDE
 # First, do no harm
 
 !SLIDE commandline
