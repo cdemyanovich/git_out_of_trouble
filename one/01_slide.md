@@ -1,3 +1,6 @@
+!SLIDE
+# Git Out of Trouble
+
 !SLIDE commandline
 # Finding Help
 
