@@ -1,15 +1,18 @@
 !SLIDE
 # Git Out of Trouble
 
+!SLIDE
+# First, do no harm
+
 !SLIDE commandline
-# Finding Help
+## Finding Help
 
     $ git help <command>
 
     $ man git-<command>
 
 !SLIDE commandline incremental
-# Experiment
+## Experiment
 
     $ git add --dry-run .
     add '.gitignore'
@@ -29,6 +32,26 @@
       ...
 
 .notes -n is the short-hand designator, but it sometimes has a different meaning for other commands
+
+!SLIDE commandline incremental
+## But, do wear safety goggles
+
+`-n`, _usually_ short-hand for `--dry-run`
+
+    $ git help commit
+    ...
+    -n, --no-verify
+               This option bypasses the pre-commit and
+               commit-msg hooks. See also githooks(5).
+    ...
+    --dry-run
+               Do not create a commit, but show a list of paths
+               that are to be committed, paths with local
+               changes that will be left uncommitted and paths
+               that are untracked.
+
+!SLIDE
+# A little trouble
 
 !SLIDE commandline incremental
 # Problem
