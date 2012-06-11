@@ -40,8 +40,6 @@ In short, everyone
       #	Gemfile
       ...
 
-.notes -n is the short-hand designator, but it sometimes has a different meaning for other commands
-
 !SLIDE commandline incremental
 ## But, do wear safety goggles
 
