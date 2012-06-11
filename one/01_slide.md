@@ -64,7 +64,7 @@ need an image here
 
 !SLIDE commandline incremental
 # Problem
-## You staged a file by mistake
+## You added a file by mistake
 
     $ git add showoff.json
     $ git status
