@@ -62,6 +62,8 @@ In short, everyone
 !SLIDE
 # A little trouble
 
+need an image here
+
 !SLIDE commandline incremental
 # Problem
 ## You staged a file by mistake
