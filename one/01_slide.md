@@ -339,14 +339,14 @@ need an image here
       faster_specs
       refactor_noaa_decline_reasons
 
-!SLIDE bullets
+!SLIDE bullets smaller
 # Summary
 
-The options --contains, --merged and --no-merged serve three related but different purposes:
+The options `--contains`, `--merged` and `--no-merged` serve three related but different purposes:
 
-    * --contains <commit> is used to find all branches which will need special attention if <commit> were to be rebased or amended, since those branches contain the specified <commit>.
-    * --merged is used to find all branches which can be safely deleted, since those branches are fully contained by HEAD.
-    * --no-merged is used to find branches which are candidates for merging into HEAD, since those branches are not fully contained by HEAD.
+* `--contains <commit>` is used to find all branches which will need special attention if `<commit>` were to be rebased or amended, since those branches contain the specified `<commit>`.
+* `--merged` is used to find all branches which can be safely deleted, since those branches are fully contained by `HEAD`.
+* `--no-merged` is used to find branches which are candidates for merging into `HEAD`, since those branches are not fully contained by `HEAD`.
 
 !SLIDE
 # Big Trouble in Little China
