@@ -204,29 +204,6 @@ need an image here
 
 !SLIDE commandline incremental
 # Problem
-## You began work on master, but work is more involved than you thought
-
-!SLIDE commandline incremental
-# Solution
-## Branch from master; continue working
-
-    $ git checkout -b <new-branch-name>
-    $ git commit -m "Add ability to sign in/out"
-    $ git checkout master
-    $ git merge <new-branch-name>
-    $ git push
-
-!SLIDE commandline incremental
-# Solution
-## Complete work on master; pull upstream changes with a rebase
-
-    $ git add -A
-    $ git commit -m "Add ability to sign in/out"
-    $ git pull --rebase
-    $ git push
-
-!SLIDE commandline incremental
-# Problem
 ## You wrote a bad commit message for the last commit
 
     $ git commit -m "Whatever"
@@ -363,6 +340,29 @@ need an image here
 * `--merged` to find all branches which can be safely deleted
 * `--no-merged` to find branches which are candidates for merging into `HEAD`
 * `--contains <commit>` find all branches which will need special attention if `<commit>` were to be rebased or amended
+
+!SLIDE commandline incremental
+# Problem
+## You began work on master, but work is more involved than you thought
+
+!SLIDE commandline incremental
+# Solution
+## Branch from master; continue working
+
+    $ git checkout -b <new-branch-name>
+    $ git commit -m "Add ability to sign in/out"
+    $ git checkout master
+    $ git merge <new-branch-name>
+    $ git push
+
+!SLIDE commandline incremental
+# Solution
+## Complete work on master; pull upstream changes with a rebase
+
+    $ git add -A
+    $ git commit -m "Add ability to sign in/out"
+    $ git pull --rebase
+    $ git push
 
 !SLIDE
 # Big Trouble in Little China
