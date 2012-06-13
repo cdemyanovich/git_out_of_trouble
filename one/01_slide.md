@@ -223,7 +223,6 @@ need an image here
     # Please enter the commit message for your changes. Lines starting
     # with '#' will be ignored, and an empty message aborts the commit.
     # On branch master
-    # Your branch is ahead of 'origin/master' by 4 commits.
     #
     # Changes to be committed:
     #   (use "git reset HEAD^1 <file>..." to unstage)
@@ -238,7 +237,6 @@ need an image here
     # Please enter the commit message for your changes. Lines starting
     # with '#' will be ignored, and an empty message aborts the commit.
     # On branch master
-    # Your branch is ahead of 'origin/master' by 4 commits.
     #
     # Changes to be committed:
     #   (use "git reset HEAD^1 <file>..." to unstage)
