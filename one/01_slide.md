@@ -362,12 +362,3 @@ need an image here
     $ git pull --rebase
     $ git push
 
-!SLIDE
-# Big Trouble in Little China
-
-need an image here from this awesome movie!
-
-!SLIDE
-# Problem
-## You lost a commit
-### (or so you think)
