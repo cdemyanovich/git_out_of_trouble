@@ -304,7 +304,7 @@ need an image here
 
 !SLIDE commandline incremental
 # Problem
-## You don not know if changes are merged into your current branch
+## You want to clean up your local branches
 
     $ git branch
       546826_react_to_pgs_callback
@@ -314,17 +314,14 @@ need an image here
       refactor_noaa_decline_reasons
 
 !SLIDE commandline incremental
-# Solution
-## Which branches contain the most recent commit on this branch?
+## Which branches can I delete?
 
-    $ git branch --contains
+    $ git branch
+      546826_react_to_pgs_callback
       faster_specs
     * master
+      pgs
       refactor_noaa_decline_reasons
-
-!SLIDE commandline incremental
-# Solution
-## What branches are merged into this branch?
 
     $ git branch --merged
       546826_react_to_pgs_callback
@@ -332,21 +329,40 @@ need an image here
       pgs
 
 !SLIDE commandline incremental
-# Solution
-## What branches are NOT merged into this branch?
+## Which branches should I keep?
+
+    $ git branch
+      546826_react_to_pgs_callback
+      faster_specs
+    * master
+      pgs
+      refactor_noaa_decline_reasons
 
     $ git branch --no-merged
       faster_specs
       refactor_noaa_decline_reasons
 
-!SLIDE bullets smaller
-# Summary
+!SLIDE commandline incremental
+## Which branches contain `<commit>`?
 
-The options `--contains`, `--merged` and `--no-merged` serve three related but different purposes:
+    $ git branch
+      546826_react_to_pgs_callback
+      faster_specs
+    * master
+      pgs
+      refactor_noaa_decline_reasons
 
-* `--contains <commit>` is used to find all branches which will need special attention if `<commit>` were to be rebased or amended, since those branches contain the specified `<commit>`.
-* `--merged` is used to find all branches which can be safely deleted, since those branches are fully contained by `HEAD`.
-* `--no-merged` is used to find branches which are candidates for merging into `HEAD`, since those branches are not fully contained by `HEAD`.
+    $ git branch --contains
+      faster_specs
+    * master
+      refactor_noaa_decline_reasons
+
+!SLIDE bullets incremental
+## Use `git branch`
+
+* `--merged` to find all branches which can be safely deleted
+* `--no-merged` to find branches which are candidates for merging into `HEAD`
+* `--contains <commit>` find all branches which will need special attention if `<commit>` were to be rebased or amended
 
 !SLIDE
 # Big Trouble in Little China
