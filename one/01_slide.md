@@ -269,8 +269,10 @@ command line
 
     $ find . -type d -name ".svn" -print | xargs rm -rf
 
+!SLIDE center
+![Mr. Clean](../images/Mr_Clean_small.jpg "Mr. Clean")
+
 !SLIDE commandline
-## ...or you could sweep everything under the rug
 
     $ git clean
 
