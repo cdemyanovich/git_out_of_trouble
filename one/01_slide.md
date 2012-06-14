@@ -2,6 +2,24 @@
 # Git Out of Trouble
 
 !SLIDE
+## What is Git?
+
+!SLIDE
+## Environment
+
+Mac OS X 10.7 "Lion"
+
+1.7.10.4
+
+command line
+
+!SLIDE
+## git-scm.com/downloads
+
+!SLIDE center
+![Other Tools](../images/other_tools.png "Other Tools")
+
+!SLIDE
 ## Who gets into trouble?
 
 !SLIDE center
