@@ -2,13 +2,22 @@
 # Git Out of Trouble
 
 !SLIDE
-## Who?
+## Who gets into trouble?
 
-image from The Karate Kid II
-"Hey man, I'm not looking for any trouble."
-"Maybe trouble looking for you."
+!SLIDE center
+![Uncle Sam](../images/UncleSam.gif "Uncle Sam")
 
-In short, everyone
+!SLIDE center
+![Me](../images/me_dodgeball_championship.jpg "Me")
+
+!SLIDE center
+![GitHub](../images/octocat_fluid.png "GitHub")
+
+!SLIDE center
+![Linus Torvalds](../images/linus-torvalds.jpeg "Linus Torvalds")
+
+!SLIDE center
+![Everyone](../images/globe_west_540.jpg "Everyone")
 
 !SLIDE
 # First, do no harm
