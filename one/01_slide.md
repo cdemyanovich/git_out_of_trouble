@@ -207,7 +207,7 @@ command line
       nothing added to commit but untracked files present (use "git add" to track)
 
 !SLIDE commandline incremental smaller
-# Solution
+## Ignore it!
 
     $ echo .DS_Store >> .gitignore
 
@@ -224,7 +224,7 @@ command line
 
 !SLIDE commandline incremental smaller
 # Problem
-## You always want to ignore a file
+## You want to ignore a file without updating all repositories
 
     $ git status
       # On branch master
@@ -235,8 +235,7 @@ command line
       nothing added to commit but untracked files present (use "git add" to track)
 
 !SLIDE commandline incremental smaller
-# Solution
-## Add the file to a global ignore file
+## Use a global ignore file
 
     $ git config --global core.excludesfile ~/.gitignore
 
@@ -249,6 +248,8 @@ command line
 
     $ cat ~/.gitignore
     .DS_Store
+
+    $ cat .gitignore
 
     $ git status
       # On branch master
