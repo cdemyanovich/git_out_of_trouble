@@ -50,6 +50,24 @@ command line
 
     $ man git-<command>
 
+!SLIDE commandline small
+
+    $ git
+    usage: git [--version] [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+               [-p|--paginate|--no-pager] [--no-replace-objects] [--bare]
+               [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+               [-c name=value] [--help]
+               <command> [<args>]
+
+    The most commonly used git commands are:
+       add        Add file contents to the index
+       bisect     Find by binary search the change that introduced a bug
+       branch     List, create, or delete branches
+       checkout   Checkout a branch or paths to the working tree
+    ...
+
+    See 'git help <command>' for more information on a specific command.
+
 !SLIDE commandline incremental
 ## Experiment
 
