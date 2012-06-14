@@ -1,20 +1,28 @@
 !SLIDE
 http://git-scm.com
 
-!SLIDE
-Pragmatic Guide to Git http://pragprog.com/book/pg_git/pragmatic-guide-to-git
+!SLIDE center
+## Pragmatic Guide to Git
+### http://pragprog.com/book/pg_git/pragmatic-guide-to-git
+![Pragmatic Guide to Git](../images/pg_git_small.jpg)
 
-!SLIDE
-Pro Git http://git-scm.com/book (free)
+!SLIDE center
+## Pro Git
+### http://git-scm.com/book (free)
+![Pro Git](../images/pro-git-118x157.jpg)
 
-!SLIDE
-Pragmatic Version Control Using Git http://pragprog.com/book/tsgit/pragmatic-version-control-using-git
+!SLIDE center
+## Pragmatic Version Control Using Git
+### http://pragprog.com/book/tsgit/pragmatic-version-control-using-git
 
-!SLIDE
-git cheat sheets http://help.github.com/git-cheat-sheets/
+!SLIDE center
+## Git Cheat Sheets
+### http://help.github.com/git-cheat-sheets/
 
-!SLIDE
-cheat gem http://cheat.errtheblog.com/
+!SLIDE center
+## `cheat` gem
+###http://cheat.errtheblog.com/
 
-!SLIDE
-http://help.github.com
+!SLIDE center
+## GitHub Help
+### http://help.github.com
