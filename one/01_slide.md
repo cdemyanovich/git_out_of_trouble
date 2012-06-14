@@ -41,7 +41,7 @@ command line
 # First, do no harm
 
 !SLIDE commandline
-## Finding Help
+## An Ounce of Prevention
 
     $ git help <command>
 
