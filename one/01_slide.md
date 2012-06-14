@@ -22,6 +22,9 @@ command line
 !SLIDE
 # Trouble
 
+!SLIDE center
+![Mistakes](../images/mistakesdemotivator.jpg "Mistakes")
+
 !SLIDE
 ## Who gets into trouble?
 
