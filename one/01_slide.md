@@ -20,6 +20,9 @@ command line
 ![Other Tools](../images/other_tools.png "Other Tools")
 
 !SLIDE
+# Trouble
+
+!SLIDE
 ## Who gets into trouble?
 
 !SLIDE center
