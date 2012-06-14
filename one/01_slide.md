@@ -196,7 +196,7 @@ command line
 
 !SLIDE commandline incremental smaller
 # Problem
-## You want to ignore a file
+## Some file is cluttering up your status
 
     $ git status
       # On branch master
@@ -256,11 +256,17 @@ command line
 
 !SLIDE
 # Problem
-## .DS_Store is everywhere! Deleting all of them will take forever!
+## `.DS_Store` is everywhere!
 
 !SLIDE commandline
-# Solution
-## Remove them with the clean command
+## You could...
+
+    $ find . -type f -name ".DS_Store" -print | xargs rm -rf
+
+    $ find . -type d -name ".svn" -print | xargs rm -rf
+
+!SLIDE commandline
+## ...or you could sweep everything under the rug
 
     $ git clean
 
