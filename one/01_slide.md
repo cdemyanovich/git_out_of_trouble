@@ -41,10 +41,10 @@ command line
 ![Everyone](../images/globe_west_540.jpg "Everyone")
 
 !SLIDE
-# First, do no harm
+# An Ounce of Prevention
 
 !SLIDE commandline
-## An Ounce of Prevention
+## RTFM
 
     $ git help <command>
 
