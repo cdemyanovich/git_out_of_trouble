@@ -123,7 +123,16 @@ command line
 
 !SLIDE commandline incremental
 # Solution
-## __R__ead __t__he __F__ine __C__omments (RTFC)
+## RTFC
+
+    $ git status
+      # On branch master
+      # Changes to be committed:
+      #   (use "git reset HEAD <file>..." to unstage)
+      #
+      #        new file:     showoff.json
+
+!SLIDE commandline incremental
 
     $ git reset HEAD showoff.json
 
@@ -153,6 +162,16 @@ command line
 # Solution
 ## RTFC
 
+    $ git status
+     # On branch master
+     # Changes to be committed:
+     #   (use "git reset HEAD <file>..." to unstage)
+     #
+     #	deleted:    references/02_slide.md
+     #
+
+!SLIDE commandline incremental small
+
     $ git reset HEAD references/02_slide.md
     Unstaged changes after reset:
     D	references/02_slide.md
@@ -168,7 +187,6 @@ command line
      no changes added to commit (use "git add" and/or "git commit -a")
 
 !SLIDE commandline incremental
-## Again, RTFC
 
     $ git checkout -- references/02_slide.md
 
