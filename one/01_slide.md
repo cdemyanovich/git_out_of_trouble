@@ -106,9 +106,7 @@ command line
                that are untracked.
 
 !SLIDE
-# A little trouble
-
-need an image here
+# A Pound of Cure
 
 !SLIDE commandline incremental
 # Problem
