@@ -307,7 +307,7 @@ For more on ignore patterns and precendence of ignore files
 
 !SLIDE commandline incremental
 # Solution
-## Amend the last commit
+## Amend it
 
     $ git commit --amend
 
@@ -340,11 +340,48 @@ For more on ignore patterns and precendence of ignore files
     #
 
 !SLIDE commandline
-## Your bad log message is fixed
+## Much better
 
     $ git commit --amend
+    ...
     [master a4f0c81] Describe amending commit to fix bad message
      1 file changed, 11 insertions(+)
+
+!SLIDE commandline incremental
+## Not just for commit messages
+
+    $ git status
+      # On branch master
+      # Your branch is ahead of 'origin/master' by 4 commits.
+      #
+      # Changes not staged for commit:
+      #   (use "git add <file>..." to update what will be committed)
+      #   (use "git checkout -- <file>..." to discard changes in working directory)
+      #
+      #	modified:   one/01_slide.md
+
+    $ git commit --amend
+
+!SLIDE code smaller
+    Describe amending commit to fix bad message
+
+    # Please enter the commit message for your changes. Lines starting
+    # with '#' will be ignored, and an empty message aborts the commit.
+    # On branch master
+    #
+    # Changes to be committed:
+    #   (use "git reset HEAD^1 <file>..." to unstage)
+    #
+    #	modified:   one/01_slide.md
+    #
+
+!SLIDE commandline
+## All changes in one commit
+
+    $ git commit --amend
+    ...
+    [master 57f0ba9] Describe amending commit to fix bad message
+     1 file changed, 4 insertions(+)
 
 !SLIDE center
 ![Caution](../images/500px-Stop_hand_caution.svg.png)
@@ -358,6 +395,13 @@ For more on ignore patterns and precendence of ignore files
     $ git commit --amend
     [master a4f0c81] Describe amending commit to fix bad message
      1 file changed, 11 insertions(+)
+
+    $ git commit --amend
+    [master 57f0ba9] Describe amending commit to fix bad message
+     1 file changed, 4 insertions(+)
+
+!SLIDE
+## When using `--amend`, think locally
 
 !SLIDE commandline incremental
 # Problem
