@@ -56,3 +56,9 @@
 !SLIDE center
 ### gitimmersion.com/
 ![Git Immersion](../images/git_immersion.png)
+
+!SLIDE
+# Q & A
+## Here on Friday afternoons
+## craig@8thlight.com
+## @demmer12
