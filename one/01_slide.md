@@ -44,6 +44,12 @@ command line
 !SLIDE
 # An Ounce of Prevention
 
+!SLIDE
+"...an Ounce of Prevention is worth a Pound of Cure...."
+
+!SLIDE center
+![Benjamin Franklin](../images/427px-Benjamin_Franklin_by_Joseph-Siffred_Duplessis.jpg)
+
 !SLIDE commandline
 ## RTFM
 
