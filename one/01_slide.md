@@ -235,7 +235,7 @@ command line
       #	.DS_Store
       nothing added to commit but untracked files present (use "git add" to track)
 
-!SLIDE commandline incremental smaller
+!SLIDE commandline incremental small
 ## Use a global ignore file
 
     $ git config --global core.excludesfile ~/.gitignore
