@@ -13,10 +13,8 @@ Mac OS X 10.7 "Lion"
 
 command line
 
-!SLIDE
-## git-scm.com/downloads
-
 !SLIDE center
+### git-scm.com/downloads
 ![Other Tools](../images/other_tools.png "Other Tools")
 
 !SLIDE
