@@ -2,29 +2,29 @@
 # References
 
 !SLIDE center
-### http://git-scm.com
-![Git](../images/Git-Logo-2Color.png)
+### git-scm.com
+![Git](../images/Git-Logo-2Color_small.png)
 
 !SLIDE center
-### http://pragprog.com/book/pg_git/pragmatic-guide-to-git
+### pragprog.com/book/pg_git/pragmatic-guide-to-git
 ![Pragmatic Guide to Git](../images/pg_git_small.jpg)
 
 !SLIDE center
-### http://git-scm.com/book
+### git-scm.com/book
 #### (free)
 ![Pro Git](../images/pro_git.jpg)
 
 !SLIDE center
-### http://pragprog.com/book/tsgit/pragmatic-version-control-using-git
+### pragprog.com/book/tsgit/pragmatic-version-control-using-git
 ![Pragmatic Version Control Using Git](../images/tsgit_small.jpg)
 
 !SLIDE center
-### http://help.github.com
+### help.github.com
 ![GitHub Help](../images/help.github.com.png)
 
 !SLIDE center
 ## `cheat` gem
-### http://cheat.errtheblog.com/
+### cheat.errtheblog.com/
 
 !SLIDE commandline incremental
 
@@ -54,5 +54,5 @@
 ![Git Achievements](../images/git_achievements.png)
 
 !SLIDE center
-### http://gitimmersion.com/
+### gitimmersion.com/
 ![Git Immersion](../images/git_immersion.png)
