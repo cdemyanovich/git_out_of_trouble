@@ -207,7 +207,7 @@ command line
       #	.DS_Store
       nothing added to commit but untracked files present (use "git add" to track)
 
-!SLIDE commandline incremental smaller
+!SLIDE commandline incremental small
 ## Ignore it!
 
     $ echo .DS_Store >> .gitignore
@@ -257,8 +257,7 @@ command line
       nothing to commit (working directory clean)
 
 !SLIDE
-# Problem
-## `.DS_Store` is everywhere!
+## But `.DS_Store` is still everywhere!
 
 !SLIDE commandline
 ## You could...
