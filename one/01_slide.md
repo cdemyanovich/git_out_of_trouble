@@ -159,6 +159,9 @@
     $ git rm references/02_slide.md
     rm 'references/02_slide.md'
 
+    $ ls references/02_slide.md
+    ls: references/02_slide.md: No such file or directory
+
     $ git status
      # On branch master
      # Changes to be committed:
@@ -202,6 +205,9 @@
     $ git status
      # On branch master
      nothing to commit (working directory clean)
+
+    $ ls references/02_slide.md
+    references/02_slide.md
 
 !SLIDE commandline incremental smaller
 # Problem
