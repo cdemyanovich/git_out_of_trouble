@@ -1,8 +1,12 @@
 !SLIDE
 # Git Out of Trouble
 
-!SLIDE
+!SLIDE bullets incremental
 ## What is Git?
+
+* open source
+* distributed
+* fast
 
 !SLIDE center
 ![Lion](../images/InstallAssistant.175x175-75.png) 10.7
