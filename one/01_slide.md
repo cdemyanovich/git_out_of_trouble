@@ -9,9 +9,9 @@
 * fast
 
 !SLIDE center
-![Lion](../images/InstallAssistant.175x175-75.png) 10.7
-
 ![Git logo](../images/Git-Icon-1788C_small.png) 1.7.10.4
+
+![Lion](../images/InstallAssistant.175x175-75.png) 10.7
 
 ![iTerm2](../images/iTerm_icon_small.jpg) command line
 
