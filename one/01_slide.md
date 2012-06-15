@@ -325,8 +325,10 @@ command line
     [master a4f0c81] Describe amending commit to fix bad message
      1 file changed, 11 insertions(+)
 
+!SLIDE center
+![Caution](../images/500px-Stop_hand_caution.svg.png)
+
 !SLIDE commandline
-## WARNING: the SHA changed
 
     $ git commit -m "Whatever"
     [master 1eaaace] Whatever
