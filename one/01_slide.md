@@ -267,6 +267,15 @@ command line
 
     $ find . -type d -name ".svn" -print | xargs rm -rf
 
+!SLIDE center
+![Mr. Clean](../images/Mr_Clean_small.jpg "Mr. Clean")
+
+!SLIDE commandline
+
+    $ git clean
+
+    $ git clean -d
+
 !SLIDE commandline incremental
 # Problem
 ## You wrote a bad commit message for the last commit
