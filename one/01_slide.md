@@ -475,6 +475,74 @@ command line
          $ git commit -m "Whatever"
          [master 1eaaace] Whatever
 
+!SLIDE
+## You pushed a bad commit
+
+!SLIDE commandline incremental
+
+    $ git commit -am "Killed Mr. Clean"
+    [master ece75be] Killed Mr. Clean
+     1 file changed, 9 deletions(-)
+
+!SLIDE commandline incremental
+
+    $ git revert ece75be
+
+!SLIDE smaller
+
+    Revert "Killed Mr. Clean"
+
+    This reverts commit ece75be6fa91e135cfc349341aa523d323d92e5b.
+
+    # Please enter the commit message for your changes. Lines starting
+    # with '#' will be ignored, and an empty message aborts the commit.
+    # On branch master
+    # Your branch is ahead of 'origin/master' by 2 commits.
+    #
+    # Changes to be committed:
+    #   (use "git reset HEAD <file>..." to unstage)
+    #
+    #	modified:   one/01_slide.md
+    #
+    # Untracked files:
+    #   (use "git add <file>..." to include in what will be committed)
+    #
+    #	images/
+
+!SLIDE commandline
+
+    $ git revert ece75be
+    ...
+    [master 9791a68] Revert "Killed Mr. Clean"
+     1 file changed, 9 insertions(+)
+
+!SLIDE commandline incremental small
+
+    $ git log
+    commit 9791a68ebe0f454766e0d0a43c1d1e59ea943d01
+    Author: Craig Demyanovich <cdemyanovich@gmail.com>
+    Date:   Thu Jun 14 23:37:19 2012 -0500
+
+        Revert "Killed Mr. Clean"
+
+        This reverts commit ece75be6fa91e135cfc349341aa523d323d92e5b.
+
+    commit ece75be6fa91e135cfc349341aa523d323d92e5b
+    Author: Craig Demyanovich <cdemyanovich@gmail.com>
+    Date:   Thu Jun 14 23:36:59 2012 -0500
+
+        Killed Mr. Clean
+    ...
+
+!SLIDE commandline
+
+    $ git revert -n ece75be
+    $ git revert -n c9099b3
+    ...
+    $ git revert -n 8fdd6b1
+
+    $ git commit -am "Reverted a few bad commits"
+
 !SLIDE commandline incremental
 # Problem
 ## You began work on master, but work is more involved than you thought
