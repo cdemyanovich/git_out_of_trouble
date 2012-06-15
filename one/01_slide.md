@@ -444,7 +444,7 @@ For more on ignore patterns and precendence of ignore files
       refactor_noaa_decline_reasons
 
 !SLIDE commandline incremental
-## Which branches contain `<commit>`?
+## Bonus: Which branches contain `<commit>`?
 
     $ git branch
       546826_react_to_pgs_callback
