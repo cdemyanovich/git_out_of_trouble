@@ -415,6 +415,66 @@ command line
 * `--no-merged` to find branches which are candidates for merging into `HEAD`
 * `--contains <commit>` find all branches which will need special attention if `<commit>` were to be rebased or amended
 
+!SLIDE
+## You want to know what changed in a commit
+
+!SLIDE commandline incremental small
+
+    $ git log -p
+
+    commit 8fdd6b1a31ae4eb07ddafa7027c3e54cc4fdc9cc
+    Author: Craig Demyanovich <cdemyanovich@gmail.com>
+    Date:   Thu Jun 14 21:21:57 2012 -0500
+
+        Bigger text on using an ignore file
+
+    diff --git a/one/01_slide.md b/one/01_slide.md
+    index a4a3fa7..b2cff87 100644
+    --- a/one/01_slide.md
+    +++ b/one/01_slide.md
+    @@ -235,7 +235,7 @@ command line
+           #        .DS_Store
+           nothing added to commit but untracked files present (use "git add" to track)
+
+    -!SLIDE commandline incremental smaller
+    +!SLIDE commandline incremental small
+     ## Use a global ignore file
+
+         $ git config --global core.excludesfile ~/.gitignore
+
+    commit 175c8c3bce2f2901f42ddc8c332b3d101ee2069a
+    Author: Craig Demyanovich <cdemyanovich@gmail.com>
+    Date:   Thu Jun 14 21:18:10 2012 -0500
+
+        Better warning about changing SHAs
+    ...
+
+!SLIDE commandline incremental small
+
+    $ git show 175c8c3
+    commit 175c8c3bce2f2901f42ddc8c332b3d101ee2069a
+    Author: Craig Demyanovich <cdemyanovich@gmail.com>
+    Date:   Thu Jun 14 21:18:10 2012 -0500
+
+        Better warning about changing SHAs
+
+    diff --git a/one/01_slide.md b/one/01_slide.md
+    index 3a90275..a4a3fa7 100644
+    --- a/one/01_slide.md
+    +++ b/one/01_slide.md
+    @@ -325,8 +325,10 @@ command line
+         [master a4f0c81] Describe amending commit to fix bad message
+          1 file changed, 11 insertions(+)
+
+    +!SLIDE center
+    +![Caution](../images/500px-Stop_hand_caution.svg.png)
+    +
+     !SLIDE commandline
+    -## WARNING: the SHA changed
+
+         $ git commit -m "Whatever"
+         [master 1eaaace] Whatever
+
 !SLIDE commandline incremental
 # Problem
 ## You began work on master, but work is more involved than you thought
