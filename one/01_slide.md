@@ -593,26 +593,3 @@ For more on ignore patterns and precendence of ignore files
 
     $ git commit -am "Reverted a few bad commits"
 
-!SLIDE commandline incremental
-# Problem
-## You began work on master, but work is more involved than you thought
-
-!SLIDE commandline incremental
-# Solution
-## Branch from master; continue working
-
-    $ git checkout -b <new-branch-name>
-    $ git commit -m "Add ability to sign in/out"
-    $ git checkout master
-    $ git merge <new-branch-name>
-    $ git push
-
-!SLIDE commandline incremental
-# Solution
-## Complete work on master; pull upstream changes with a rebase
-
-    $ git add -A
-    $ git commit -m "Add ability to sign in/out"
-    $ git pull --rebase
-    $ git push
-
