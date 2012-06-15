@@ -270,6 +270,14 @@
       # On branch master
       nothing to commit (working directory clean)
 
+!SLIDE commandline
+
+For more on ignore patterns and precendence of ignore files
+
+    $ git help gitignore
+
+    $ man gitignore
+
 !SLIDE
 ## But `.DS_Store` is still everywhere!
 
