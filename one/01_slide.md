@@ -340,21 +340,6 @@ command line
 
 !SLIDE commandline incremental
 # Problem
-## You wrote a bad commit message a few commits ago
-
-    $ git commit -m "Whatever"
-    [master 1eaaace] Whatever
-     1 file changed, 11 insertions(+)
-
-
-!SLIDE commandline incremental
-# Solution
-## Interactively rebase, stopping to correct bad message
-
-    $ git rebase -i <sha>
-
-!SLIDE commandline incremental
-# Problem
 ## You want to clean up your local branches
 
     $ git branch
