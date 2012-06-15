@@ -4,14 +4,12 @@
 !SLIDE
 ## What is Git?
 
-!SLIDE
-## Environment
+!SLIDE center
+![Lion](../images/InstallAssistant.175x175-75.png) 10.7
 
-Mac OS X 10.7 "Lion"
+![Git logo](../images/Git-Icon-1788C_small.png) 1.7.10.4
 
-1.7.10.4
-
-command line
+![iTerm2](../images/iTerm_icon_small.jpg) command line
 
 !SLIDE center
 ### git-scm.com/downloads
