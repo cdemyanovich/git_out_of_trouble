@@ -1,0 +1,718 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Git Out of Trouble</title>
+
+  <meta name="viewport" content="width=device-width"/>
+
+  <link rel="stylesheet" href="./css/reset.css" type="text/css"/>
+  <link rel="stylesheet" href="./css/showoff.css" type="text/css"/>
+
+  <script type="text/javascript" src="./js/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src="./js/jquery-print.js"></script>
+  <script type="text/javascript" src="./js/jquery.batchImageLoad.js"></script>
+
+  <script type="text/javascript" src="./js/jquery.doubletap-0.1.js"></script>
+
+  <script type="text/javascript" src="./js/fg.menu.js"></script>
+  <script type="text/javascript" src="./js/showoff.js"></script>
+  <script type="text/javascript" src="./js/jTypeWriter.js"> </script>
+  <script type="text/javascript" src="./js/sh_main.min.js"></script>
+  <script type="text/javascript" src="./js/core.js"></script>
+  <script type="text/javascript" src="./js/showoffcore.js"></script>
+  <script type="text/javascript" src="./js/coffee-script.js"></script>
+
+  <link type="text/css" href="./css/fg.menu.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/theme/ui.all.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/sh_style.css" rel="stylesheet" >
+
+  
+
+  
+
+  <script type="text/javascript">
+  $(function(){
+      setupPreso(false, './');
+  });
+  </script>
+
+</head>
+
+<body>
+
+<a tabindex="0" href="#search-engines" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="navmenu"><span class="ui-icon ui-icon-triangle-1-s"></span>slides</a>
+<div id="navigation" class="hidden"></div>
+
+<div id="help">
+  <table>
+    <tr><td class="key">z, ?</td><td>toggle help (this)</td></tr>
+    <tr><td class="key">space, &rarr;</td><td>next slide</td></tr>
+    <tr><td class="key">shift-space, &larr;</td><td>previous slide</td></tr>
+    <tr><td class="key">d</td><td>toggle debug mode</td></tr>
+    <tr><td class="key">## &lt;ret&gt;</td><td>go to slide #</td></tr>
+    <tr><td class="key">c, t</td><td>table of contents (vi)</td></tr>
+    <tr><td class="key">f</td><td>toggle footer</td></tr>
+    <tr><td class="key">r</td><td>reload slides</td></tr>
+    <tr><td class="key">n</td><td>toggle notes</td></tr>
+    <tr><td class="key">p</td><td>run preshow</td></tr>
+  </table>
+</div>
+
+<div class="buttonNav">
+  <input type="submit" onClick="prevStep();" value="prev"/>
+  <input type="submit" onClick="nextStep();" value="next"/>
+</div>
+
+<div id="preso">loading presentation...</div>
+<div id="footer">
+  <span id="slideInfo"></span>
+  <span id="debugInfo"></span>
+  <span id="notesInfo"></span>
+</div>
+
+<div id="slides" class="offscreen" style="display:none;">
+<div class="slide" data-transition="none"><div class="content" ref="one/01_slide/1">
+<h1>Git Out of Trouble</h1></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="one/01_slide/2">
+<h2>What is Git?</h2>
+
+<ul>
+<li>open source</li>
+<li>distributed</li>
+<li>fast</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="one/01_slide/3">
+<p><img src="./file/one/../images/Git-Icon-1788C_small.png" alt="Git logo"/> 1.7.10.4</p>
+
+<p><img src="./file/one/../images/InstallAssistant.175x175-75.png" alt="Lion"/> 10.7</p>
+
+<p><img src="./file/one/../images/iTerm_icon_small.jpg" alt="iTerm2"/> command line</p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="one/01_slide/4">
+<h3>git-scm.com/downloads</h3>
+
+<p><img src="./file/one/../images/other_tools.png" title="Other Tools" alt="Other Tools"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/5">
+<h1>Trouble</h1></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="one/01_slide/6">
+<p><img src="./file/one/../images/mistakesdemotivator.jpg" title="Mistakes" alt="Mistakes"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/7">
+<h2>Who gets into trouble?</h2></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="one/01_slide/8">
+<p><img src="./file/one/../images/UncleSam.gif" title="Uncle Sam" alt="Uncle Sam"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="one/01_slide/9">
+<p><img src="./file/one/../images/me_dodgeball_championship.jpg" title="Me" alt="Me"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="one/01_slide/10">
+<p><img src="./file/one/../images/octocat_fluid.png" title="GitHub" alt="GitHub"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="one/01_slide/11">
+<p><img src="./file/one/../images/linus-torvalds.jpeg" title="Linus Torvalds" alt="Linus Torvalds"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="one/01_slide/12">
+<p><img src="./file/one/../images/globe_west_540.jpg" title="Everyone" alt="Everyone"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/13">
+<h1>An Ounce of Prevention</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/14">
+<p>"...an Ounce of Prevention is worth a Pound of Cure...."</p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="one/01_slide/15">
+<p><img src="./file/one/../images/427px-Benjamin_Franklin_by_Joseph-Siffred_Duplessis.jpg" alt="Benjamin Franklin"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content commandline" ref="one/01_slide/16">
+<h2>RTFM</h2>
+
+<pre><code><code class="command">$ git help &lt;command&gt;</code>
+<code class="result">
+</code><code class="command">$ man git-&lt;command&gt;</code>
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline small" ref="one/01_slide/17">
+<pre><code><code class="command">$ git</code>
+<code class="result">usage: git [--version] [--exec-path[=&lt;path&gt;]] [--html-path] [--man-path] [--info-path]
+           [-p|--paginate|--no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=&lt;path&gt;] [--work-tree=&lt;path&gt;] [--namespace=&lt;name&gt;]
+           [-c name=value] [--help]
+           &lt;command&gt; [&lt;args&gt;]
+
+The most commonly used git commands are:
+   add        Add file contents to the index
+   bisect     Find by binary search the change that introduced a bug
+   branch     List, create, or delete branches
+   checkout   Checkout a branch or paths to the working tree
+...
+
+See 'git help &lt;command&gt;' for more information on a specific command.
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="one/01_slide/18">
+<h2>Experiment</h2>
+
+<pre><code><code class="command">$ git add --dry-run .</code>
+<code class="result">add '.gitignore'
+add '.rvmrc'
+add 'Gemfile'
+...
+
+</code><code class="command">$ git status</code>
+<code class="result">  # On branch master
+  #
+  # Untracked files:
+  #   (use "git add &lt;file&gt;..." to include in what will be committed)
+  #
+  # .gitignore
+  # .rvmrc
+  # Gemfile
+  ...
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="one/01_slide/19">
+<h2>But, do wear safety goggles</h2>
+
+<p><code>-n</code>, <em>usually</em> short-hand for <code>--dry-run</code></p>
+
+<pre><code><code class="command">$ git help commit</code>
+<code class="result">...
+-n, --no-verify
+           This option bypasses the pre-commit and
+           commit-msg hooks. See also githooks(5).
+...
+--dry-run
+           Do not create a commit, but show a list of paths
+           that are to be committed, paths with local
+           changes that will be left uncommitted and paths
+           that are untracked.
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/20">
+<h1>A Pound of Cure</h1></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="one/01_slide/21">
+<h1>Problem</h1>
+
+<h2>You added a file by mistake</h2>
+
+<pre><code><code class="command">$ git add showoff.json</code>
+<code class="result">
+</code><code class="command">$ git status</code>
+<code class="result">  # On branch master
+  # Changes to be committed:
+  #   (use "git reset HEAD &lt;file&gt;..." to unstage)
+  #
+  #        new file:     showoff.json
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="one/01_slide/22">
+<h1>Solution</h1>
+
+<h2>RTFC</h2>
+
+<pre><code><code class="command">$ git status</code>
+<code class="result">  # On branch master
+  # Changes to be committed:
+  #   (use "git reset HEAD &lt;file&gt;..." to unstage)
+  #
+  #        new file:     showoff.json
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="one/01_slide/23">
+<pre><code><code class="command">$ git reset HEAD showoff.json</code>
+<code class="result">
+</code><code class="command">$ git status</code>
+<code class="result">  # On branch master
+  # Untracked files:
+  #   (use "git add &lt;file&gt;..." to include in what will be committed)
+  #
+  #        showoff.json
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="one/01_slide/24">
+<h1>Problem</h1>
+
+<h2>You removed a file by mistake</h2>
+
+<pre><code><code class="command">$ git rm references/02_slide.md</code>
+<code class="result">rm 'references/02_slide.md'
+
+</code><code class="command">$ ls references/02_slide.md</code>
+<code class="result">ls: references/02_slide.md: No such file or directory
+
+</code><code class="command">$ git status</code>
+<code class="result"> # On branch master
+ # Changes to be committed:
+ #   (use "git reset HEAD &lt;file&gt;..." to unstage)
+ #
+ #  deleted:    references/02_slide.md
+ #
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="one/01_slide/25">
+<h1>Solution</h1>
+
+<h2>RTFC</h2>
+
+<pre><code><code class="command">$ git status</code>
+<code class="result"> # On branch master
+ # Changes to be committed:
+ #   (use "git reset HEAD &lt;file&gt;..." to unstage)
+ #
+ #  deleted:    references/02_slide.md
+ #
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental small" ref="one/01_slide/26">
+<pre><code><code class="command">$ git reset HEAD references/02_slide.md</code>
+<code class="result">Unstaged changes after reset:
+D   references/02_slide.md
+
+</code><code class="command">$ git status</code>
+<code class="result"> # On branch master
+ # Changes not staged for commit:
+ #   (use "git add/rm &lt;file&gt;..." to update what will be committed)
+ #   (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)
+ #
+ #  deleted:    references/02_slide.md
+ #
+ no changes added to commit (use "git add" and/or "git commit -a")
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="one/01_slide/27">
+<pre><code><code class="command">$ git checkout -- references/02_slide.md</code>
+<code class="result">
+</code><code class="command">$ git status</code>
+<code class="result"> # On branch master
+ nothing to commit (working directory clean)
+
+</code><code class="command">$ ls references/02_slide.md</code>
+<code class="result">references/02_slide.md
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental smaller" ref="one/01_slide/28">
+<h1>Problem</h1>
+
+<h2>Some file is cluttering up your status</h2>
+
+<pre><code><code class="command">$ git status</code>
+<code class="result">  # On branch master
+  # Untracked files:
+  #   (use "git add &lt;file&gt;..." to include in what will be committed)
+  #
+  # .DS_Store
+  nothing added to commit but untracked files present (use "git add" to track)
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental small" ref="one/01_slide/29">
+<h2>Ignore it!</h2>
+
+<pre><code><code class="command">$ echo .DS_Store &gt;&gt; .gitignore</code>
+<code class="result">
+</code><code class="command">$ cat .gitignore</code>
+<code class="result">.DS_Store
+
+</code><code class="command">$ git status</code>
+<code class="result">  # On branch master
+  # Untracked files:
+  #   (use "git add &lt;file&gt;..." to include in what will be committed)
+  #
+  # .gitignore
+  nothing added to commit but untracked files present (use "git add" to track)
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental smaller" ref="one/01_slide/30">
+<h1>Problem</h1>
+
+<h2>You want to ignore a file without updating all repositories</h2>
+
+<pre><code><code class="command">$ git status</code>
+<code class="result">  # On branch master
+  # Untracked files:
+  #   (use "git add &lt;file&gt;..." to include in what will be committed)
+  #
+  # .DS_Store
+  nothing added to commit but untracked files present (use "git add" to track)
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental small" ref="one/01_slide/31">
+<h2>Use a global ignore file</h2>
+
+<pre><code><code class="command">$ git config --global core.excludesfile ~/.gitignore</code>
+<code class="result">
+</code><code class="command">$ cat ~/.gitconfig</code>
+<code class="result">...
+[core]
+        excludesfile = ~/.gitignore
+
+</code><code class="command">$ echo .DS_Store &gt;&gt; ~/.gitignore</code>
+<code class="result">
+</code><code class="command">$ cat ~/.gitignore</code>
+<code class="result">.DS_Store
+
+</code><code class="command">$ cat .gitignore</code>
+<code class="result">
+</code><code class="command">$ git status</code>
+<code class="result">  # On branch master
+  nothing to commit (working directory clean)
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline" ref="one/01_slide/32">
+<p>For more on ignore patterns and precendence of ignore files</p>
+
+<pre><code><code class="command">$ git help gitignore</code>
+<code class="result">
+</code><code class="command">$ man gitignore</code>
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/33">
+<h2>But <code>.DS_Store</code> is still everywhere!</h2></div>
+</div><div class="slide" data-transition="none"><div class="content commandline" ref="one/01_slide/34">
+<h2>You could...</h2>
+
+<pre><code><code class="command">$ find . -type f -name ".DS_Store" -print | xargs rm -rf</code>
+<code class="result">
+</code><code class="command">$ find . -type d -name ".svn" -print | xargs rm -rf</code>
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="one/01_slide/35">
+<p><img src="./file/one/../images/Mr_Clean_small.jpg" title="Mr. Clean" alt="Mr. Clean"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content commandline" ref="one/01_slide/36">
+<pre><code><code class="command">$ git clean</code>
+<code class="result">
+</code><code class="command">$ git clean -d</code>
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="one/01_slide/37">
+<h1>Problem</h1>
+
+<h2>You wrote a bad commit message for the last commit</h2>
+
+<pre><code><code class="command">$ git commit -m "Whatever"</code>
+<code class="result">[master 1eaaace] Whatever
+ 1 file changed, 11 insertions(+)
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="one/01_slide/38">
+<h1>Solution</h1>
+
+<h2>Amend it</h2>
+
+<pre><code><code class="command">$ git commit --amend</code>
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content code smaller" ref="one/01_slide/39">
+<pre><code>Whatever
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+#
+# Changes to be committed:
+#   (use "git reset HEAD^1 &lt;file&gt;..." to unstage)
+#
+#   modified:   one/01_slide.md
+#
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content code smaller" ref="one/01_slide/40">
+<pre><code>Describe amending commit to fix bad message
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+#
+# Changes to be committed:
+#   (use "git reset HEAD^1 &lt;file&gt;..." to unstage)
+#
+#   modified:   one/01_slide.md
+#
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline" ref="one/01_slide/41">
+<h2>Much better</h2>
+
+<pre><code><code class="command">$ git commit --amend</code>
+<code class="result">...
+[master a4f0c81] Describe amending commit to fix bad message
+ 1 file changed, 11 insertions(+)
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="one/01_slide/42">
+<h2>Not just for commit messages</h2>
+
+<pre><code><code class="command">$ git status</code>
+<code class="result">  # On branch master
+  # Your branch is ahead of 'origin/master' by 4 commits.
+  #
+  # Changes not staged for commit:
+  #   (use "git add &lt;file&gt;..." to update what will be committed)
+  #   (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)
+  #
+  # modified:   one/01_slide.md
+
+</code><code class="command">$ git commit --amend</code>
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content code smaller" ref="one/01_slide/43">
+<pre><code>Describe amending commit to fix bad message
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+#
+# Changes to be committed:
+#   (use "git reset HEAD^1 &lt;file&gt;..." to unstage)
+#
+#   modified:   one/01_slide.md
+#
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline" ref="one/01_slide/44">
+<h2>All changes in one commit</h2>
+
+<pre><code><code class="command">$ git commit --amend</code>
+<code class="result">...
+[master 57f0ba9] Describe amending commit to fix bad message
+ 1 file changed, 4 insertions(+)
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="one/01_slide/45">
+<p><img src="./file/one/../images/500px-Stop_hand_caution.svg.png" alt="Caution"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content commandline" ref="one/01_slide/46">
+<pre><code><code class="command">$ git commit -m "Whatever"</code>
+<code class="result">[master 1eaaace] Whatever
+ 1 file changed, 11 insertions(+)
+
+</code><code class="command">$ git commit --amend</code>
+<code class="result">[master a4f0c81] Describe amending commit to fix bad message
+ 1 file changed, 11 insertions(+)
+
+</code><code class="command">$ git commit --amend</code>
+<code class="result">[master 57f0ba9] Describe amending commit to fix bad message
+ 1 file changed, 4 insertions(+)
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/47">
+<h2>When using <code>--amend</code>, think locally</h2></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="one/01_slide/48">
+<h1>Problem</h1>
+
+<h2>You want to clean up your local branches</h2>
+
+<pre><code><code class="command">$ git branch</code>
+<code class="result">  546826_react_to_pgs_callback
+  faster_specs
+* master
+  pgs
+  refactor_noaa_decline_reasons
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="one/01_slide/49">
+<h2>Which branches can I delete?</h2>
+
+<pre><code><code class="command">$ git branch</code>
+<code class="result">  546826_react_to_pgs_callback
+  faster_specs
+* master
+  pgs
+  refactor_noaa_decline_reasons
+
+</code><code class="command">$ git branch --merged</code>
+<code class="result">  546826_react_to_pgs_callback
+* master
+  pgs
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="one/01_slide/50">
+<h2>Which branches should I keep?</h2>
+
+<pre><code><code class="command">$ git branch</code>
+<code class="result">  546826_react_to_pgs_callback
+  faster_specs
+* master
+  pgs
+  refactor_noaa_decline_reasons
+
+</code><code class="command">$ git branch --no-merged</code>
+<code class="result">  faster_specs
+  refactor_noaa_decline_reasons
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="one/01_slide/51">
+<h2>Bonus: Which branches contain <code>&lt;commit&gt;</code>?</h2>
+
+<pre><code><code class="command">$ git branch</code>
+<code class="result">  546826_react_to_pgs_callback
+  faster_specs
+* master
+  pgs
+  refactor_noaa_decline_reasons
+
+</code><code class="command">$ git branch --contains</code>
+<code class="result">  faster_specs
+* master
+  refactor_noaa_decline_reasons
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="one/01_slide/52">
+<h2>Use <code>git branch</code></h2>
+
+<ul>
+<li><code>--merged</code> to find all branches which can be safely deleted</li>
+<li><code>--no-merged</code> to find branches which are candidates for merging into <code>HEAD</code></li>
+<li><code>--contains &lt;commit&gt;</code> find all branches which will need special attention if <code>&lt;commit&gt;</code> were to be rebased or amended</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/53">
+<h2>You want to know what changed in a commit</h2></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental small" ref="one/01_slide/54">
+<pre><code><code class="command">$ git log -p</code>
+<code class="result">
+commit 8fdd6b1a31ae4eb07ddafa7027c3e54cc4fdc9cc
+Author: Craig Demyanovich &lt;cdemyanovich@gmail.com&gt;
+Date:   Thu Jun 14 21:21:57 2012 -0500
+
+    Bigger text on using an ignore file
+
+diff --git a/one/01_slide.md b/one/01_slide.md
+index a4a3fa7..b2cff87 100644
+--- a/one/01_slide.md
++++ b/one/01_slide.md
+@@ -235,7 +235,7 @@ command line
+       #        .DS_Store
+       nothing added to commit but untracked files present (use "git add" to track)
+
+-!SLIDE commandline incremental smaller
++!SLIDE commandline incremental small
+ ## Use a global ignore file
+
+     $ git config --global core.excludesfile ~/.gitignore
+
+commit 175c8c3bce2f2901f42ddc8c332b3d101ee2069a
+Author: Craig Demyanovich &lt;cdemyanovich@gmail.com&gt;
+Date:   Thu Jun 14 21:18:10 2012 -0500
+
+    Better warning about changing SHAs
+...
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental small" ref="one/01_slide/55">
+<pre><code><code class="command">$ git show 175c8c3</code>
+<code class="result">commit 175c8c3bce2f2901f42ddc8c332b3d101ee2069a
+Author: Craig Demyanovich &lt;cdemyanovich@gmail.com&gt;
+Date:   Thu Jun 14 21:18:10 2012 -0500
+
+    Better warning about changing SHAs
+
+diff --git a/one/01_slide.md b/one/01_slide.md
+index 3a90275..a4a3fa7 100644
+--- a/one/01_slide.md
++++ b/one/01_slide.md
+@@ -325,8 +325,10 @@ command line
+     [master a4f0c81] Describe amending commit to fix bad message
+      1 file changed, 11 insertions(+)
+
++!SLIDE center
++![Caution](../images/500px-Stop_hand_caution.svg.png)
++
+ !SLIDE commandline
+-## WARNING: the SHA changed
+
+     $ git commit -m "Whatever"
+     [master 1eaaace] Whatever
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/56">
+<h2>You pushed a bad commit</h2></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="one/01_slide/57">
+<pre><code><code class="command">$ git commit -am "Killed Mr. Clean"</code>
+<code class="result">[master ece75be] Killed Mr. Clean
+ 1 file changed, 9 deletions(-)
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="one/01_slide/58">
+<pre><code><code class="command">$ git revert ece75be</code>
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content smaller" ref="one/01_slide/59">
+<pre><code>Revert "Killed Mr. Clean"
+
+This reverts commit ece75be6fa91e135cfc349341aa523d323d92e5b.
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is ahead of 'origin/master' by 2 commits.
+#
+# Changes to be committed:
+#   (use "git reset HEAD &lt;file&gt;..." to unstage)
+#
+#   modified:   one/01_slide.md
+#
+# Untracked files:
+#   (use "git add &lt;file&gt;..." to include in what will be committed)
+#
+#   images/
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline" ref="one/01_slide/60">
+<pre><code><code class="command">$ git revert ece75be</code>
+<code class="result">...
+[master 9791a68] Revert "Killed Mr. Clean"
+ 1 file changed, 9 insertions(+)
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental small" ref="one/01_slide/61">
+<pre><code><code class="command">$ git log</code>
+<code class="result">commit 9791a68ebe0f454766e0d0a43c1d1e59ea943d01
+Author: Craig Demyanovich &lt;cdemyanovich@gmail.com&gt;
+Date:   Thu Jun 14 23:37:19 2012 -0500
+
+    Revert "Killed Mr. Clean"
+
+    This reverts commit ece75be6fa91e135cfc349341aa523d323d92e5b.
+
+commit ece75be6fa91e135cfc349341aa523d323d92e5b
+Author: Craig Demyanovich &lt;cdemyanovich@gmail.com&gt;
+Date:   Thu Jun 14 23:36:59 2012 -0500
+
+    Killed Mr. Clean
+...
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content commandline" ref="one/01_slide/62">
+<pre><code><code class="command">$ git revert -n ece75be</code>
+<code class="command">$ git revert -n c9099b3</code>
+<code class="result">...
+</code><code class="command">$ git revert -n 8fdd6b1</code>
+<code class="result">
+</code><code class="command">$ git commit -am "Reverted a few bad commits"</code>
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="references/02_slide/1">
+<h1>References</h1></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="references/02_slide/2">
+<h3>git-scm.com</h3>
+
+<p><img src="./file/references/../images/Git-Logo-2Color_small.png" alt="Git"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="references/02_slide/3">
+<h3>pragprog.com/book/pg_git/pragmatic-guide-to-git</h3>
+
+<p><img src="./file/references/../images/pg_git_small.jpg" alt="Pragmatic Guide to Git"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="references/02_slide/4">
+<h3>git-scm.com/book</h3>
+
+<h4>(free)</h4>
+
+<p><img src="./file/references/../images/pro_git.jpg" alt="Pro Git"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="references/02_slide/5">
+<h3>pragprog.com/book/tsgit/pragmatic-version-control-using-git</h3>
+
+<p><img src="./file/references/../images/tsgit_small.jpg" alt="Pragmatic Version Control Using Git"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="references/02_slide/6">
+<h3>help.github.com</h3>
+
+<p><img src="./file/references/../images/help.github.com.png" alt="GitHub Help"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="references/02_slide/7">
+<h2><code>cheat</code> gem</h2>
+
+<h3>cheat.errtheblog.com/</h3></div>
+</div><div class="slide" data-transition="none"><div class="content commandline incremental" ref="references/02_slide/8">
+<pre><code><code class="command">$ gem install cheat</code>
+<code class="result">Fetching: cheat-1.3.0.gem (100%)
+Successfully installed cheat-1.3.0
+1 gem installed
+
+</code><code class="command">$ cheat git</code>
+<code class="result">
+git:
+  Setup
+  -----
+
+  git clone &lt;repo&gt;
+    clone the repository specified by &lt;repo&gt;; this is similar to "checkout" in
+    some other version control systems such as Subversion and CVS
+
+  Add colors to your ~/.gitconfig file:
+
+    [color]
+      ui = auto
+  ...
+</code></code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="references/02_slide/9">
+<h3>https://github.com/icefox/git-achievements</h3>
+
+<p><img src="./file/references/../images/git_achievements.png" alt="Git Achievements"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="references/02_slide/10">
+<h3>gitimmersion.com/</h3>
+
+<p><img src="./file/references/../images/git_immersion.png" alt="Git Immersion"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="references/02_slide/11">
+<h1>Q &amp; A</h1>
+
+<h2>Here on Friday afternoons</h2>
+
+<h2>craig@8thlight.com</h2>
+
+<h2>@demmer12</h2></div>
+</div></div>
+
+</body>
+</html>
